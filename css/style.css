@@ -50,8 +50,6 @@ body {
 }
 
 .btn {
-  margin: 10px;
-  padding: 30px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -59,6 +57,7 @@ body {
   color: white;
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
+  font-size: 10px;
  }
 
 .btn:hover {
@@ -79,4 +78,8 @@ body {
 
 .btn-4 {
   background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+}
+
+.nav{
+  display:none;
 }
