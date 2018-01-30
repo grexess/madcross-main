@@ -1,0 +1,38 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font: 16px Sans-Serif;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.footer {
+  background: #42A5F5;
+  color: white;
+  padding: 20px; 
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+  .responsiveLeft {
+    float: none !important;
+  }
+  .responsiveRight {
+    float: none !important;
+  }
+}
+
+.responsiveLeft {
+  float: left;
+}
+.responsiveRight {
+  float: right;
+}
