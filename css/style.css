@@ -19,23 +19,34 @@ body {
   box-sizing: border-box;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 980px) {
+ /*
   .responsiveLeft {
     float: none !important;
+    text-align: center !important;
   }
   .responsiveRight {
     float: none !important;
+    text-align: center !important;
   }
+  */
     .logoLeft, .logoRight {
     width:0px !important;
   }
-}
-
-@media only screen and (max-width: 980px) {
-  .logoLeft, .logoRight {
+  .navLink{
+  width:75% !important;
+  }
+   .logoLeft, .logoRight {
     width:100%;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .navLink{
+   float:none !important;
+  }
+}
+
 
 .responsiveLeft {
   float: left;
@@ -49,37 +60,18 @@ body {
 .logoRight {
 }
 
-.btn {
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
-  font-size: 10px;
- }
-
-.btn:hover {
-  background-position: right center; /* change the direction of the change here */
-}
-
-.btn-1 {
-  background-color: #89c759;
-}
-
-.btn-2 {
- background-color: #eb1777;
-}
-
-.btn-3 {
- background-color: #823d97;
-}
-
-.btn-4 {
- background-color: #3bb4e5;
-}
-
 .nav{
   display:none;
+}
+
+.navLink{
+  font-size: 10px;
+  width:50%;
+}
+
+.header {
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
 }

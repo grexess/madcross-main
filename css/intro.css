@@ -142,7 +142,7 @@ body {
           transform: rotate(-90deg);
 }
 .item a {
-  color: #666;
+  color: #fff;
   text-decoration: none;
   display: block;
   outline: none;
@@ -164,4 +164,5 @@ a.activeLink {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
