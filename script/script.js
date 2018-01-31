@@ -64,10 +64,22 @@ function setButtonEqualWidth() {
   };
 }
 
-$(document).ready(function () {
+function initializeIntro(){
+    $(".Zn, .Sm, .Ch, .Ot").on("click", function() {      
+        $(".menu")
+            // Remove all classes
+            .removeClass()
+            // Put back .primary-color class + the clicked elements class with the added prefix "pm_".
+            .addClass('menu pm_' + $(this).attr('class') );       
+    });
+return(false);
+}
 
+
+$(document).ready(function () {
+    initializeIntro()
 });
 
 jQuery(window).on("load", function () {
- setButtonEqualWidth();
+ //setButtonEqualWidth();
 });

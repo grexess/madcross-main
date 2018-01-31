@@ -65,19 +65,19 @@ body {
 }
 
 .btn-1 {
-  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+  background-color: #89c759;
 }
 
 .btn-2 {
-  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+ background-color: #eb1777;
 }
 
 .btn-3 {
-  background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+ background-color: #823d97;
 }
 
 .btn-4 {
-  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+ background-color: #3bb4e5;
 }
 
 .nav{
