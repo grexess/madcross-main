@@ -9,16 +9,16 @@ $(function () {
             .removeClass()
             // Put back .primary-color class + the clicked elements class with the added prefix "pm_".
             .addClass('menu pm_' + $(this).attr('class'));
-        $(".header").css("background-color", $(this)[0].dataset.color);
+        $(".clickBtn").css("border-color", $(this)[0].dataset.color);
         switchNavContainer($(this)[0].dataset.nav);
     }).hover(function () {
         if (!bInitial) {
             currBackColor = $(".header").css("background-color");
         }
         //$(".nav").hide();
-        $(".header").css("background-color", $(this)[0].dataset.color);
+        //$(".header").css("background-color", $(this)[0].dataset.color);
     }, function () {
-        $(".header").css("background-color", currBackColor);
+        //$(".header").css("background-color", currBackColor);
     });
     $(".Middle").on("click", function () {
         $(".header").css("background-color", "#151515");

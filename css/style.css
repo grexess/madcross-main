@@ -45,6 +45,9 @@ body {
   .navLink{
    float:none !important;
   }
+  .clickBtn{
+    font-size: 0.28em !important;
+  }
 }
 
 
@@ -75,3 +78,40 @@ body {
   -o-transition: background-color 2s ease-out;
   transition: background-color 2s ease-out;
 }
+
+/* centered header navigation */
+body {
+  padding: 30px;
+  background-color: white;
+}
+.outerHeader {
+  padding: 0px;
+  text-align: center;
+}
+.innerHeader {
+  margin: auto;
+  width: 80%;
+}
+
+/* test */
+.table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding:2px;
+}
+
+.leftcell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.rightcell {
+  display: table-cell;
+  vertical-align: middle;
+
+}
+.clickBtn{
+  border-width: 2px;
+  font-size: 0.5em;
+}
+
