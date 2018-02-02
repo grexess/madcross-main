@@ -111,7 +111,14 @@ body {
 
 }
 .clickBtn{
-  border-width: 2px;
+  border-width: 0px;
   font-size: 0.5em;
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 5px;
+}
+.clickTxt{
+  float:right;
+  padding-left:5px;
 }
 
