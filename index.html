@@ -1,10 +1,12 @@
 <!doctype html>
+<!-- Mikrodaten-Markup hinzugefügt von Google Strukturierte Daten: Markup-Hilfe -->
 <html lang="de">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MadCross.de</title>
+    <meta name="description" content="Sport-Events für Jedermann im Osterzgebirge: ♥MadEast für Mountainbike und Enduro, ♥Flossgrabenlauf für Skilangläufer oder den ♥Waldsportparklauf für Läufer.">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
         crossorigin="anonymous"></script>
     <script src="./script/script.js"></script>
@@ -17,7 +19,7 @@
 </head>
 
 <body>
-    <div class="w3-container">
+    <div itemscope itemtype="http://schema.org/Event" class="w3-container">
 
         <!-- MASTHEAD/NAVIGATION -->
 
@@ -78,7 +80,7 @@
                                             </button>
                                         </a>
                                     </div>
-                                   <!--
+                                    <!--
                                     <div class="rightcell">
                                         <a href="./events/sommer2.html">
                                             <button class="clickBtn w3-round-xxlarge">
@@ -160,7 +162,9 @@
                                 <div class='Middle'>MadCross</div>
                             </div>
                             <div class='item item1'>
-                                <a class='Zn' href='#' data-color="#89c759" data-nav="navSpring">Frühling</a>
+                                <a class='Zn' href='#' data-color="#89c759" data-nav="navSpring">
+                                    <span itemprop="name">Frühling</span>
+                                </a>
                             </div>
                             <div class='item item2'>
                                 <a class='Sm' href='#' data-color="#eb1777" data-nav="navSommer">Sommer</a>
@@ -179,7 +183,15 @@
 
         <!-- End of INTRO -->
 
-
+        <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+            <meta itemprop="name" content="Cämmerswalde">
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <meta itemprop="streetAddress" content="Sportplatz und das Haus des Gastes in der Ortsmitte von Cämmerswalde">
+            </span>
+        </span>
+        <meta itemprop="startDate" content="2018-04-28">
+        <meta itemprop="url" content="https://www.madcross.de/events/landkreislauf.html">
+    </div>
 
 
     </div>
