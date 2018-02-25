@@ -24,6 +24,17 @@ $(function () {
         $(".header").css("background-color", "#151515");
         switchNavContainer("navIntro");
     });
+
+    $(".calendar").hover(
+
+        function() {
+            $(".desccontainer").show("1000");
+          }, function() {
+            $(".desccontainer").hide("slow");
+          }
+
+    );
+
 });
 
 function switchNavContainer(elem) {
