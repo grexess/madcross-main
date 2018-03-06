@@ -25,12 +25,22 @@ $(function () {
         switchNavContainer("navIntro");
     });
 
-    $(".calendar").hover(
+    $(".event01").hover(
 
         function() {
-            $(".desccontainer").show("1000");
+            $(".descevent01").show("1000");
           }, function() {
-            $(".desccontainer").hide("slow");
+            $(".descevent01").hide("slow");
+          }
+
+    );
+
+    $(".event02").hover(
+
+        function() {
+            $(".descevent02").show("1000");
+          }, function() {
+            $(".descevent02").hide("slow");
           }
 
     );
@@ -41,4 +51,5 @@ function switchNavContainer(elem) {
     $(".nav").hide();
     $("." + elem).show();
 }
+
 
