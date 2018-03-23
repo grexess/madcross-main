@@ -3,7 +3,7 @@ html {
 }
 body {
   margin: 0;
-  font-family: 'Chango';
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 22px;
   min-height: 100%;
   display: grid;
@@ -132,7 +132,7 @@ body {
 }
 
 .descriptionHeader-autumn{
-  background-color: #823d97;
+  background-color: #aca8ad;
 }
 
 /* calendar */

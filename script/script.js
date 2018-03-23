@@ -9,7 +9,7 @@ $(function () {
             .removeClass()
             // Put back .primary-color class + the clicked elements class with the added prefix "pm_".
             .addClass('menu pm_' + $(this).attr('class'));
-        $(".clickBtn").css("background-color", $(this)[0].dataset.color);
+        //$(".clickBtn").css("background-color", $(this)[0].dataset.color);
         switchNavContainer($(this)[0].dataset.nav);
     }).hover(function () {
         if (!bInitial) {

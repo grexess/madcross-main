@@ -9,56 +9,322 @@
         crossorigin="anonymous"></script>
     <script src="../script/script.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/madeast.css">
     <link href='https://fonts.googleapis.com/css?family=Chango' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <div class="w3-container">
-
-        <!-- MASTHEAD/NAVIGATION -->
-
-        <div class="w3-row w3-margin-top">
-
-            <div class="w3-col s3 w3-center w3-mobile">
-                <div class="w3-container w3-padding-large">
-                    <button class="w3-btn w3-xlarge w3-padding-large" onClick="parent.location='../index.html'">
-                        <i class="w3-margin-right fa fa-home"></i>Home
-                    </button>
-                </div>
-            </div>
-
-            <div class="w3-col s6 w3-center w3-mobile">
-                <div class="w3-container">
-                    <div class="w3-panel w3-blue w3-center w3-padding-large">
-                        MadEast
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-col s3 w3-center">
-                &nbsp;
-                <!--
-                <img src="./images/logoright.jpg" class="logoRight" alt="MadEast Logo2"> -->
-            </div>
-            <!-- MAIN -->
-            <div class="w3-row">
-                <div class="w3-center">
-                    Content
-                </div>
-            </div>
+  <!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+          <a href="#" class="w3-bar-item w3-button">One new friend request</a>
+          <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
+          <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
         </div>
+      </div>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+      <img src="/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+    </a>
     </div>
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="w3-container">
-            <div class="w3-panel w3-blue w3-center w3-padding-large">
-                MadCross.de
+  </div>
+  
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+  </div>
+  
+  <!-- Page Container -->
+  <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+    <!-- The Grid -->
+    <div class="w3-row">
+      <!-- Left Column -->
+      <div class="w3-col m2">
+        <!-- Profile -->
+        <div class="w3-card w3-round w3-white">
+          <div class="w3-container">
+            <div class="w3-container w3-theme-d4">
+              <h3>Mad East Challenge</h3>
             </div>
+  
+            <p class="w3-center">23.06.-24.06.2018</p>
+            <hr>
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Hermsdorf / Erzgebirge</p>
+          </div>
         </div>
-    </footer>
+        <br>
+  
+        <div class="w3-card w3-round w3-white w3-hide-small">
+          <div class="w3-container">
+            <p><strong>Mad East Challenge e. V.</strong></p>
+            <p>
+              c/o D. Beyer, Hauptstraße 56, 09544 Neuhausen/OT Cämmerswalde
+            </p>
+          </div>
+        </div>
+        <br>
+  
+        <!-- Alert Box -->
+        <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+          <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+            <i class="fa fa-remove"></i>
+          </span>
+          <p><strong>Hey!</strong></p>
+          <p>People are looking at your profile. Find out who.</p>
+        </div>
+  
+        <!-- End Left Column -->
+      </div>
+  
+      <!-- Middle Column -->
+      <div class="w3-col m6">
+  
+        <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+          <img src="/w3images/avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+          <span class="w3-right w3-opacity">1 min</span>
+          <h4>MAD ENDURO “4 + 1”</h4><br>
+  
+          <div class="w3-container">
+            <p class="w3-theme-d1"><strong>Wertungsklassen</strong></p>
+            <p> Damen (Jahrgänge 2001 und älter)</p>
+            <p>Herren (Jahrgänge 2001 und älter) </p>
+          </div>
+          
+          <div class="w3-container">
+            <p class="w3-theme-d1"><strong>Startgeld</strong></p>
+            <p> 25 €</p>
+          </div>
+          
+           <div class="w3-container">
+            <p class="w3-theme-d1"><strong>Die 32 schnellsten Fahrer*innen aus WP I – WP IV treffen sich in einem nächtlichen Four-Cross Race</strong></p>
+          </div>
+  
+          <!-- Accordion -->
+          <div class="w3-card w3-round">
+            <div class="w3-white">
+              <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> 12:00 Uhr</button>
+              <div id="Demo1" class="w3-hide w3-container">
+                <p> Veranstaltungsbeginn</p>
+              </div>
+              <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> 15:00 Uhr</button>
+              <div id="Demo2" class="w3-hide w3-container">
+                <p>Start WP I – Hermsdorf I</p>
+              </div>
+              <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> 15:30 Uhr</button>
+              <div id="Demo3" class="w3-hide w3-container">
+                <p>Start WP II – Hexenfelsen</p>
+              </div>
+              <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> 15:30 Uhr</button>
+              <div id="Demo3" class="w3-hide w3-container">
+                <p>Start WP II – Hexenfelsen</p>
+              </div>
+              <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> 15:30 Uhr</button>
+              <div id="Demo3" class="w3-hide w3-container">
+                <p>Start WP II – Hexenfelsen</p>
+              </div>
+              <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> 16:00 Uhr</button>
+              <div id="Demo3" class="w3-hide w3-container">
+                <p>Start WP III – Seyde</p>
+              </div>
+              <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> 16:30 Uhr</button>
+              <div id="Demo3" class="w3-hide w3-container">
+                <p>Start WP IV – Hermsdorf II</p>
+              </div>
+              <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> ab 16:30 Uhr</button>
+              <div id="Demo3" class="w3-hide w3-container">
+                <p> Zieleinlauf</p>
+              </div>
+              <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> 19:00 Uhr</button>
+              <div id="Demo3" class="w3-hide w3-container">
+                <p>Streckentest</p>
+              </div>
+              <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> 21:00 Uhr</button>
+              <div id="Demo3" class="w3-hide w3-container">
+                <p>*MAD HALL 4X „Best 32“</p>
+              </div>
+            </div>
+          </div>
+          <br>
+  
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> 20 km</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> 1.000 hm</p>
+          <hr class="w3-clear">
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> 01776 Hermsdorf / Erzgebirge</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Bergstr. 15</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Am Ritterstall (Skiliftausgang)</p>
+        </div>
+  
+        <!-- End Middle Column -->
+      </div>
+  
+      <!-- Right Column -->
+      <div class="w3-col m4">
+  
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container w3-theme-d4">
+            <h3>Teilnahmebedingungen</h3>
+          </div>
+        </div>
+        <br>
+  
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <p class="w3-theme-d1"><strong>Abmeldung</strong></p>
+            <p>Abmeldungen sind unter Einbehaltung einer Bearbeitungsgebühr von 10 Euro und unter Vorlage eines ärztlichen Attests möglich.</p>
+          </div>
+        </div>
+        <br>
+  
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <p class="w3-theme-d1"><strong>Änderungen</strong></p>
+            <p>Der Veranstalter behält sich vor, die Ausschreibung, die Strecke und das Reglement jederzeit ändern zu können.</p>
+          </div>
+        </div>
+        <br>
+  
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <p class="w3-theme-d1"><strong>Ausfall der Veranstaltung</strong></p>
+            <p>Bei Ausfall oder Abbruch der Veranstaltung aufgrund von höherer Gewalt oder anderen Gründen, die der Veranstalter nicht zu vertreten hat, hat der Teilnehmer keinen Anspruch auf Rückerstattung oder Schadensersatzansprüche jeglicher Art.</p>
+          </div>
+        </div>
+        <br>
+  
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <p class="w3-theme-d1"><strong>Enduro Schutzausrüstung</strong></p>
+            <p>Das Tragen eines Rückenprotektors (CE-Kennzeichnung beachten) bzw. eines Rucksacks mit Rückenprotektor sowie das Tragen eines Enduro-Helms (verlängerter Hinterkopfschutz) ist Pflicht. Das Tragen von Ellbogen-/ Knie-/ Schienbeinprotektoren und
+              Fullface-Helm wird empfohlen.</p>
+          </div>
+        </div>
+        <br>
+  
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <p class="w3-theme-d1"><strong>Einverständniserklärung</strong></p>
+            <p>Jeder Teilnehmer erklärt mit seiner Unterschrift auf dem Meldeformular bzw. mit dem Abschicken der Onlineanmeldung sein Einverständnis mit den Teilnahmebedingungen. Teilnehmer unter 18 Jahren benötigen eine Einverständniserklärung der Eltern.</p>
+          </div>
+        </div>
+        <br>
+  
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <p class="w3-theme-d1"><strong>FairPlay</strong></p>
+            <p>Die Teilnehmer sind aufgefordert, sich in Notsituationen gegenseitig Hilfe zu leisten. Der Veranstalter wird bei nachgewiesenem, auf Hilfeleistung basierendem Zeitverlust, Zeitgutschriften vornehmen. Bei nachweislich unterlassener Hilfeleistung
+              wird der Teilnehmer disqualifiziert.</p>
+          </div>
+        </div>
+        <br>
+  
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <p class="w3-theme-d1"><strong>Haftungsausschluss</strong></p>
+            <p>Jeder Teilnehmer fährt auf eigenes Risiko und das Tragen eines Helms ist jederzeit Pflicht. Jeder Teilnehmer hat sich vor Beginn der Veranstaltung über den Streckenverlauf und die Streckenbesonderheiten umfassend zu informieren. Die Straßenverkehrsordnung
+              ist jederzeit zu beachten. Vorrechte im Straßenverkehr stehen den Teilnehmern nicht zu. Der übrige Straßenverkehr darf nicht über das normale Maß hinaus behindert oder gefährdet werden. Den Teilnehmern an der Veranstaltung werden keine Befreiungen
+              von den Vorschriften der StVO gewährt. Auf Forst- und Waldwegen ist die gegenseitige Rücksichtnahme gegenüber anderen Wegnutzern verpflichtend. Bei Nichtbeachtung behält sich der Veranstalter Zeitstrafen oder eine Disqualifizierung des Teilnehmers
+              vor. Jeder Teilnehmer erkennt den Haftungsausschluss des Veranstalters für Schäden jeder Art an und wird weder gegen den Veranstalter, die Sponsoren und die von der Streckenführung betroffenen Grundstückseigentümer, noch gegen die Etappenorte
+              oder deren Vertreter Ansprüche wegen Schäden und Verletzungen jeder Art erheben, die durch die Teilnahme am Wettbewerb entstehen können.
+            </p>
+          </div>
+        </div>
+        <br>
+  
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <p class="w3-theme-d1"><strong>Medienrechte</strong></p>
+            <p>Jeder Teilnehmer erklärt sich damit einverstanden, dass Fotos, Filmaufnahmen oder Interviews in Rundfunk und Fernsehen von ihm ohne Vergütungsanspruch vom Veranstalter genutzt werden.
+            </p>
+          </div>
+        </div>
+        <br>
+  
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <p class="w3-theme-d1"><strong>Nachhaltigkeit</strong></p>
+            <p>Die Teilnehmer werden darauf hingewiesen, dass für die Getränke- und Essensausgabe ausschließlich Mehrwegbecher bzw. Mehrwegschüsseln verwendet werden, wofür ein Pfand zu hinterlegen ist. Wir bitten daher die Teilnehmer Kleingeld während der
+              Veranstaltung mit sich zuführen.</p>
+          </div>
+        </div>
+        <br>
+  
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <p class="w3-theme-d1"><strong>Nachmeldungen</strong></p>
+            <p>Nachmeldungen vor Ort sind zu den Zeiten der Startnummernausgabe gegen eine zusätzliche Gebühr von 10,- Euro möglich.</p>
+          </div>
+        </div>
+        <br>
+  
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <p class="w3-theme-d1"><strong>Naturschutz</strong></p>
+            <p>Mit seiner Anmeldung verpflichtet sich jeder Teilnehmer, die Natur sauber zu halten und jeglichen von ihm verursachten Müll an den Verpflegungsstellen in den bereitgestellten Behältern zu entsorgen bzw. bis zum Ziel mitzuführen. Bei Nichtbeachtung
+              behält sich der Veranstalter Zeitstrafen oder eine Disqualifizierung des Teilnehmers vor.</p>
+          </div>
+        </div>
+        <br>
+  
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <p class="w3-theme-d1"><strong>Reuegeld</strong></p>
+            <p>Wird eine Nennung nicht erfüllt, so ist neben der Meldegebühr ein Reuegeld von 5,- Euro an den Ausrichter zu zahlen.</p>
+          </div>
+        </div>
+        <br>
+  
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <p class="w3-theme-d1"><strong>Siegerehrung und Preise</strong></p>
+            <p>Preise werden nur bei der Siegerehrung überreicht. Bei Nichterscheinen hat der Teilnehmer keinen Anspruch auf nachträgliche Zusendung.</p>
+          </div>
+        </div>
+        <br>
+  
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <p class="w3-theme-d1"><strong>Zahlungseingang</strong></p>
+            <p>Nach der Online-Anmeldung muss das Stargeldgeld innerhalb von 7 Tagen auf dem Konto des Mad East Challenge e.V. eingegangen sein. Der Startplatz ist erst gültig, sofern das Startgeld bei uns eingegangen ist. Wir halten uns vor, bei einer großen
+              Nachfrage gesonderte Zahlungseingangstermine vorzugeben.</p>
+          </div>
+        </div>
+        <br>
+  
+        <!-- End Right Column -->
+      </div>
+  
+      <!-- End Grid -->
+    </div>
+  
+    <!-- End Page Container -->
+  </div>
+  <br>
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-theme-d3 w3-padding-16">
+    <h5>Footer</h5>
+  </footer>
+  
+  <footer class="w3-container w3-theme-d5">
+    <p>MadCross.de</p>
+  </footer>
 </body>
 
 </html>
