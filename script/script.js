@@ -45,6 +45,16 @@ $(function () {
 
     );
 
+    $(".event03").hover(
+
+        function() {
+            $(".descevent03").show("1000");
+          }, function() {
+            $(".descevent03").hide("slow");
+          }
+
+    );
+
 });
 
 function switchNavContainer(elem) {

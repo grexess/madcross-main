@@ -46,7 +46,7 @@ body {
    float:none !important;
   }
   .clickBtn{
-    font-size: 0.28em !important;
+    font-size: 1em !important;
   }
 }
 
@@ -111,7 +111,7 @@ body {
 }
 .clickBtn{
   border-width: 0px;
-  font-size: 0.5em;
+  font-size: 1em;
   vertical-align: middle;
   cursor: pointer;
   margin: 5px;
@@ -133,6 +133,10 @@ body {
 
 .descriptionHeader-autumn{
   background-color: #aca8ad;
+}
+
+.descriptionHeader-summer{
+  background-color: #f11308;
 }
 
 /* calendar */
@@ -158,6 +162,11 @@ body {
 .event02{
 	top:10vh;
   left:15vw;
+}
+
+.event03{
+	top:40vh;
+  left:5vw;
 }
 
 .calendar{
