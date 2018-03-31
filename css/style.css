@@ -255,3 +255,14 @@ body {
     }
 }
 
+#evt1:hover{
+  background-color: #89c759;
+}
+
+#evt2:hover{
+  background-color:#f11308;
+}
+
+#evt3:hover{
+  background-color: #aca8ad;
+}

@@ -67,7 +67,7 @@
       <!-- Left Column -->
       <div class="w3-col m2">
         <!-- Profile -->
-        <div class="w3-card w3-round w3-theme-d1">
+        <div class="w3-card w3-round w3-text-black logo">
           <div class="w3-container">
             <div class="w3-container w3-center w3-margin w3-theme-d4">
               <h3>Mad East Challenge</h3>
@@ -77,6 +77,24 @@
             <hr>
             <p class="w3-center">
               Hermsdorf / Erzgebirge</p>
+          </div>
+        </div>
+        <br>
+
+        <div class="w3-card w3-round w3-white">
+          <div class="w3-container">
+            <p>
+              <i class="fa fa-envelope fa-fw w3-margin-right"></i> 01776 Hermsdorf / Erzgebirge</p>
+            <p>
+              <i class="fa fa-road fa-fw w3-margin-right"></i> Bergstr. 15</p>
+            <p>
+              <i class="fa fa-home fa-fw w3-margin-right"></i> Am Ritterstall (Skiliftausgang)</p>
+              <p>
+                  <a href="mailto:madeast@madcross.de "> madeast@madcross.de </a></p>
+
+            <div class="w3-card w3-round w3-white w3-margin-bottom">
+              <div id="map" style="width:100%; height:199px"></div>
+            </div>
           </div>
         </div>
         <br>
@@ -109,18 +127,7 @@
       <!-- Middle Column -->
       <div class="w3-col m7">
 
-        <div class="w3-container w3-card w3-white w3-round w3-margin">
-
-          <p>
-            <i class="fa fa-envelope fa-fw w3-margin-right w3-text-theme"></i> 01776 Hermsdorf / Erzgebirge</p>
-          <p>
-            <i class="fa fa-road fa-fw w3-margin-right w3-text-theme"></i> Bergstr. 15</p>
-          <p>
-            <i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Am Ritterstall (Skiliftausgang)</p>
-
-          <div class="w3-card w3-round w3-white w3-hide-small">
-            <div id="map" style="width:100%; height:199px"></div>
-          </div>
+        <div class="middleCol w3-container w3-card w3-white w3-round">
 
           <div onclick="myFunction('1_1')" class="w3-button w3-margin-top w3-margin-bottom w3-block w3-center w3-theme-d4">
             <i id="ic1_1" class="fa fa-caret-right fa-fw w3-xxlarge w3-margin-right" style="vertical-align: middle;"></i>
@@ -234,8 +241,7 @@
               <span style="vertical-align: middle;">MAD LAUFRADRENNEN</span>
               <div class="w3-container w3-white">
                 <div id="1_2_1" class="w3-hide w3-margin-top">
-                  <div class="w3-card w3-round w3-white w3-left w3-padding">
-
+                  <div class="w3-white w3-left">
 
                     <div class="w3-container w3-center">
                       <img src="../images/madeast/laufrad1.jpg" alt="Avatar" class="w3-center w3-round-xlarge" style="width:80%">
@@ -283,7 +289,7 @@
               <div class="w3-container w3-white">
 
                 <div id="1_2_2" class="w3-hide w3-margin-top">
-                  <div class="w3-card w3-round w3-white w3-left w3-padding">
+                  <div class="w3-white w3-left">
 
 
                     <div class="w3-container w3-center">
@@ -348,7 +354,7 @@
 
               <div class="w3-container w3-white">
                 <div id="1_2_3" class="w3-hide w3-margin-top w3-margin-bottom">
-                  <div class="w3-card w3-round w3-white w3-left w3-padding">
+                  <div class="w3-white w3-left">
 
 
                     <div class="w3-container w3-center">
@@ -397,29 +403,24 @@
 
         </div>
 
-<!--
-        <div class="w3-round w3-content w3-section" style="max-width:500px">
-          <img class="mySlides w3-round w3-animate-fading" src="../images/madeast/crosscountry.jpg" style="width:100%">
-          <img class="mySlides w3-round w3-animate-fading" src="../images/madeast/enduro.jpg" style="width:100%">
-          <img class="mySlides w3-round w3-animate-fading" src="../images/madeast/laufrad1.jpg" style="width:100%">
-          <img class="mySlides w3-round w3-animate-fading" src="../images/madeast/nachwuchs.jpg" style="width:100%">
-        </div>
-      -->
-
-      <div id="gallery" class="w3-round w3-content w3-section" style="max-width:500px">
-          <figure> <img src="../images/madeast/crosscountry.jpg" style="width:100%" class="w3-round">
+        <div id="gallery" class="w3-round w3-content w3-section w3-hide-small" style="max-width:500px">
+          <figure>
+            <img src="../images/madeast/crosscountry.jpg" style="width:100%" class="w3-round">
             <figcaption>MAD CROSSCOUNTRY</figcaption>
           </figure>
-          <figure> <img src="../images/madeast/enduro.jpg" style="width:100%" class="w3-round">
+          <figure>
+            <img src="../images/madeast/enduro.jpg" style="width:100%" class="w3-round">
             <figcaption>MAD ENDURO</figcaption>
           </figure>
-          <figure> <img src="../images/madeast/laufrad1.jpg" style="width:100%" class="w3-round">
+          <figure>
+            <img src="../images/madeast/laufrad1.jpg" style="width:100%" class="w3-round">
             <figcaption>MAD LAUFRADRENNEN</figcaption>
           </figure>
-          <figure> <img src="../images/madeast/nachwuchs.jpg" style="width:100%" class="w3-round">
+          <figure>
+            <img src="../images/madeast/nachwuchs.jpg" style="width:100%" class="w3-round">
             <figcaption>MAD NACHWUCHS</figcaption>
           </figure>
-        </div>  
+        </div>
 
         <!-- End Middle Column -->
       </div>
