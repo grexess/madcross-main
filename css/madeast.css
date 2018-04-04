@@ -2,9 +2,7 @@ body {
 	width: 100wh;
 	height: 90vh;
 	color: #fff;
-	/*
-	
-	*/
+	font-family: 'Roboto Condensed', sans-serif !important;
 }
 
 /*The Diagonal*/
@@ -71,13 +69,18 @@ body {
 	}
 }
 
-.mySlides {display:none;}
+.myHeader{
+	background-color: #0f102d;
+	color:#fff;
+}
 
 /* SLIDESHOW */
 #gallery {
 	position: relative;
-	background: none;
 	border: none;
+	width:auto;
+    height:auto;
+    background:none;
 }
 
 #gallery figure {
@@ -92,11 +95,11 @@ body {
 #gallery figcaption {
 	position: absolute;
 	left: 1em;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: bold;
 	bottom: 0.5em;
 	z-index: 2;
-	color: white;
+	color: #fff;
 }
 
 @keyframes wechseln {

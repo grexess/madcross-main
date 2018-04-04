@@ -3,8 +3,27 @@ var myIndex = 0;
 $(function () {
 
     addParticipationConditions();
+    calculateImgContainerHeight();
 
+    $(window).resize(function(){
+        calculateImgContainerHeight();
+    });
+    
 });
+
+function calculateImgContainerHeight(){
+
+    var imgs = $("#gallery").find("img");
+    var height = 1;
+
+    $.each(imgs, function (key, value) {
+        if (height < value.height){
+            height = value.height;
+        }
+    });
+
+    $("#gallery").height(height +32);
+}
 
 function addParticipationConditions() {
 
@@ -12,7 +31,7 @@ function addParticipationConditions() {
     
     var element;
     $.each(conditions, function (key, value) {
-        element = $("<div class=\"w3-card w3-round w3-white w3-center\"><div class=\"w3-container\"><p class=\"w3-theme-d1\"><strong>"+ value.title +"</strong></p><p>" + value.desc + "</p></div></div><br>");
+        element = $("<div class=\"w3-card w3-round w3-white w3-center\"><div class=\"w3-container\"><p class=\"myHeader\"><strong>"+ value.title +"</strong></p><p>" + value.desc + "</p></div></div><br>");
         $("#condition").append(element);
     });
 }
