@@ -1,5 +1,24 @@
 var myIndex = 0;
 
+$(function () {
+
+    addParticipationConditions();
+
+});
+
+function addParticipationConditions() {
+
+    var container = $("#condition");
+    
+    var element;
+    $.each(conditions, function (key, value) {
+        element = $("<div class=\"w3-card w3-round w3-white w3-center\"><div class=\"w3-container\"><p class=\"w3-theme-d1\"><strong>"+ value.title +"</strong></p><p>" + value.desc + "</p></div></div><br>");
+        $("#condition").append(element);
+    });
+}
+
+
+
 function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");

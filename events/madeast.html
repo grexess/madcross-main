@@ -9,6 +9,9 @@
     crossorigin="anonymous"></script>
   <script src="../script/script.js"></script>
   <script src="../script/madscript.js"></script>
+
+  <script src="../data/conditions.js"></script>
+
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/madeast.css">
@@ -24,14 +27,14 @@
 <body>
   <!-- Navbar -->
   <div class="w3-top">
-    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+    <div class="w3-bar w3-left-align w3-large" style="background-color: #0f102d">
       <!--
       <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"
         href="javascript:void(0);" onclick="openNav()">
         <i class="fa fa-bars"></i>
       </a>
     -->
-      <a href="../index.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4">
+      <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">
         <i class="fa fa-home w3-margin-right"></i>MadCross.de</a>
       <a href="mailto:madeast@madcross.de " class="w3-bar-item w3-button w3-padding-large w3-hover-white" title="Messages">
         <i class="fa fa-envelope"></i>
@@ -65,7 +68,7 @@
     <!-- The Grid -->
     <div class="w3-row">
       <!-- Left Column -->
-      <div class="w3-col m2">
+      <div class="w3-col l2">
         <!-- Profile -->
         <div class="w3-card w3-round w3-text-black logo">
           <div class="w3-container">
@@ -125,7 +128,7 @@
       </div>
 
       <!-- Middle Column -->
-      <div class="w3-col m7">
+      <div class="w3-col l7">
 
         <div class="middleCol w3-container w3-card w3-white w3-round">
 
@@ -403,7 +406,7 @@
 
         </div>
 
-        <div id="gallery" class="w3-round w3-content w3-section w3-hide-small" style="max-width:500px">
+        <div id="gallery" class="w3-round w3-content w3-section w3-hide-medium w3-hide-small" style="max-width:500px">
           <figure>
             <img src="../images/madeast/crosscountry.jpg" style="width:100%" class="w3-round">
             <figcaption>MAD CROSSCOUNTRY</figcaption>
@@ -426,167 +429,16 @@
       </div>
 
       <!-- Right Column -->
-      <div class="w3-col m3">
-
-        <div class="w3-card w3-round w3-white w3-center">
-          <div class="w3-container w3-theme-d4">
-            <h3>Teilnahmebedingungen</h3>
-          </div>
+    <!-- Right Column -->
+    <div class="w3-col m3" id="condition">
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container w3-theme-d4">
+          <h3>Teilnahmebedingungen</h3>
         </div>
-        <br>
-
-        <div class="w3-card w3-round w3-white w3-center">
-          <div class="w3-container">
-            <p class="w3-theme-d1">
-              <strong>Abmeldung</strong>
-            </p>
-            <p>Abmeldungen sind unter Einbehaltung einer Bearbeitungsgebühr von 10 Euro und unter Vorlage eines ärztlichen Attests
-              möglich.
-            </p>
-          </div>
-        </div>
-        <br>
-
-        <div class="w3-card w3-round w3-white w3-center">
-          <div class="w3-container">
-            <p class="w3-theme-d1">
-              <strong>Änderungen</strong>
-            </p>
-            <p>Der Veranstalter behält sich vor, die Ausschreibung, die Strecke und das Reglement jederzeit ändern zu können.</p>
-          </div>
-        </div>
-        <br>
-
-        <div class="w3-card w3-round w3-white w3-center">
-          <div class="w3-container">
-            <p class="w3-theme-d1">
-              <strong>Ausfall der Veranstaltung</strong>
-            </p>
-            <p>Bei Ausfall oder Abbruch der Veranstaltung aufgrund von höherer Gewalt oder anderen Gründen, die der Veranstalter
-              nicht zu vertreten hat, hat der Teilnehmer keinen Anspruch auf Rückerstattung oder Schadensersatzansprüche
-              jeglicher Art.</p>
-          </div>
-        </div>
-        <br>
-
-        <div class="w3-card w3-round w3-white w3-center">
-          <div class="w3-container">
-            <p class="w3-theme-d1">
-              <strong>Enduro Schutzausrüstung</strong>
-            </p>
-            <p>Das Tragen eines Rückenprotektors (CE-Kennzeichnung beachten) bzw. eines Rucksacks mit Rückenprotektor sowie
-              das Tragen eines Enduro-Helms (verlängerter Hinterkopfschutz) ist Pflicht. Das Tragen von Ellbogen-/ Knie-/
-              Schienbeinprotektoren und Fullface-Helm wird empfohlen.</p>
-          </div>
-        </div>
-        <br>
-
-        <div class="w3-card w3-round w3-white w3-center">
-          <div class="w3-container">
-            <p class="w3-theme-d1">
-              <strong>Einverständniserklärung</strong>
-            </p>
-            <p>Jeder Teilnehmer erklärt mit seiner Unterschrift auf dem Meldeformular bzw. mit dem Abschicken der Onlineanmeldung
-              sein Einverständnis mit den Teilnahmebedingungen. Teilnehmer unter 18 Jahren benötigen eine Einverständniserklärung
-              der Eltern.</p>
-          </div>
-        </div>
-        <br>
-
-        <div class="w3-card w3-round w3-white w3-center">
-          <div class="w3-container">
-            <p class="w3-theme-d1">
-              <strong>FairPlay</strong>
-            </p>
-            <p>Die Teilnehmer sind aufgefordert, sich in Notsituationen gegenseitig Hilfe zu leisten. Der Veranstalter wird
-              bei nachgewiesenem, auf Hilfeleistung basierendem Zeitverlust, Zeitgutschriften vornehmen. Bei nachweislich
-              unterlassener Hilfeleistung wird der Teilnehmer disqualifiziert.</p>
-          </div>
-        </div>
-        <br>
-
-        <div class="w3-card w3-round w3-white w3-center">
-          <div class="w3-container">
-            <p class="w3-theme-d1">
-              <strong>Haftungsausschluss</strong>
-            </p>
-            <p>Jeder Teilnehmer fährt auf eigenes Risiko und das Tragen eines Helms ist jederzeit Pflicht. Jeder Teilnehmer
-              hat sich vor Beginn der Veranstaltung über den Streckenverlauf und die Streckenbesonderheiten umfassend zu
-              informieren. Die Straßenverkehrsordnung ist jederzeit zu beachten. Vorrechte im Straßenverkehr stehen den Teilnehmern
-              nicht zu. Der übrige Straßenverkehr darf nicht über das normale Maß hinaus behindert oder gefährdet werden.
-              Den Teilnehmern an der Veranstaltung werden keine Befreiungen von den Vorschriften der StVO gewährt. Auf Forst-
-              und Waldwegen ist die gegenseitige Rücksichtnahme gegenüber anderen Wegnutzern verpflichtend. Bei Nichtbeachtung
-              behält sich der Veranstalter Zeitstrafen oder eine Disqualifizierung des Teilnehmers vor. Jeder Teilnehmer
-              erkennt den Haftungsausschluss des Veranstalters für Schäden jeder Art an und wird weder gegen den Veranstalter,
-              die Sponsoren und die von der Streckenführung betroffenen Grundstückseigentümer, noch gegen die Etappenorte
-              oder deren Vertreter Ansprüche wegen Schäden und Verletzungen jeder Art erheben, die durch die Teilnahme am
-              Wettbewerb entstehen können.
-            </p>
-          </div>
-        </div>
-        <br>
-
-        <div class="w3-card w3-round w3-white w3-center">
-          <div class="w3-container">
-            <p class="w3-theme-d1">
-              <strong>Medienrechte</strong>
-            </p>
-            <p>Jeder Teilnehmer erklärt sich damit einverstanden, dass Fotos, Filmaufnahmen oder Interviews in Rundfunk und
-              Fernsehen von ihm ohne Vergütungsanspruch vom Veranstalter genutzt werden.
-            </p>
-          </div>
-        </div>
-        <br>
-
-        <div class="w3-card w3-round w3-white w3-center">
-          <div class="w3-container">
-            <p class="w3-theme-d1">
-              <strong>Nachhaltigkeit</strong>
-            </p>
-            <p>Die Teilnehmer werden darauf hingewiesen, dass für die Getränke- und Essensausgabe ausschließlich Mehrwegbecher
-              bzw. Mehrwegschüsseln verwendet werden, wofür ein Pfand zu hinterlegen ist. Wir bitten daher die Teilnehmer
-              Kleingeld während der Veranstaltung mit sich zuführen.</p>
-          </div>
-        </div>
-        <br>
-
-        <div class="w3-card w3-round w3-white w3-center">
-          <div class="w3-container">
-            <p class="w3-theme-d1">
-              <strong>Naturschutz</strong>
-            </p>
-            <p>Mit seiner Anmeldung verpflichtet sich jeder Teilnehmer, die Natur sauber zu halten und jeglichen von ihm verursachten
-              Müll an den Verpflegungsstellen in den bereitgestellten Behältern zu entsorgen bzw. bis zum Ziel mitzuführen.
-              Bei Nichtbeachtung behält sich der Veranstalter Zeitstrafen oder eine Disqualifizierung des Teilnehmers vor.</p>
-          </div>
-        </div>
-        <br>
-
-        <div class="w3-card w3-round w3-white w3-center">
-          <div class="w3-container">
-            <p class="w3-theme-d1">
-              <strong>Siegerehrung und Preise</strong>
-            </p>
-            <p>Preise werden nur bei der Siegerehrung überreicht. Bei Nichterscheinen hat der Teilnehmer keinen Anspruch auf
-              nachträgliche Zusendung.</p>
-          </div>
-        </div>
-        <br>
-
-        <div class="w3-card w3-round w3-white w3-center">
-          <div class="w3-container">
-            <p class="w3-theme-d1">
-              <strong>Zahlungseingang</strong>
-            </p>
-            <p>Nach der Online-Anmeldung muss das Stargeldgeld innerhalb von 7 Tagen auf dem Konto des Mad East Challenge e.V.
-              eingegangen sein. Der Startplatz ist erst gültig, sofern das Startgeld bei uns eingegangen ist. Wir halten
-              uns vor, bei einer großen Nachfrage gesonderte Zahlungseingangstermine vorzugeben.</p>
-          </div>
-        </div>
-        <br>
-
-        <!-- End Right Column -->
       </div>
+      <br>
+      <!-- End Right Column -->
+    </div>
 
       <!-- End Grid -->
     </div>
@@ -604,8 +456,17 @@
 
 
   <script>
-    //carousel();
+    $(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+	$(".diagonal-bg svg line").attr("stroke-width",  ((20 + scroll/10)  + "%"));
+	//30 is the starting width
+	//alter the amount of growth by changing scroll/x
+});
   </script>
+
+<div class="diagonal-bg">
+		<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='100%' y1='0' x2='1' y2='100%' stroke='#0f102d' stroke-width='20%'/></svg>
+	</div>
 
 </body>
 
