@@ -1,12 +1,20 @@
 var hoverbild;
 $(function() {
+	
 	hoverbild = document.querySelector("figure.snip0016");
 	hoverbild.ontouchstart = function() {
 		this.querySelector("figcaption").classList.add("fadeInOnTouch");
 	}
+
 	hoverbild.ontouchend = function() {
 		this.querySelector("figcaption").classList.remove("fadeInOnTouch");
 	}
+
+	//navtargets
+	$(".navtarget").on("click", function () {
+	   window.open($(this)[0].dataset.nav,"_self");
+    });
+
 });
 
 // Used to toggle the menu on small screens when clicking on the menu button
