@@ -257,32 +257,3 @@ figure.snip0016:hover #figcap2::before {
     border: 1px solid currentColor;
   }
   
-  .btn-0 {
-    color: #9e2741;
-  }
-  .btn-0:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #550113;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  .btn-0:hover {
-    color: #e3c0c7;
-  }
-  .btn-0:hover:before {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  
-
-  html *,
-  html *:before,
-  html *:after {
-    box-sizing: border-box;
-    transition: 0.5s ease-in-out;
-  }

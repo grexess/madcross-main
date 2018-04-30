@@ -12,7 +12,7 @@ $(function() {
 
 	//navtargets
 	$(".navtarget").on("click", function () {
-	   window.open($(this)[0].dataset.nav,"_self");
+	   window.open($(this)[0].dataset.nav,$(this)[0].dataset.target);
     });
 
 });
