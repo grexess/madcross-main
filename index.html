@@ -1,372 +1,356 @@
 <!doctype html>
-<!-- Mikrodaten-Markup hinzugefügt von Google Strukturierte Daten: Markup-Hilfe -->
 <html lang="de">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MadCross.de Waldsportparklauf Flossgrabenlauf Cämmerswalde</title>
-    <meta name="description" content="Sport-Events für Jedermann im Osterzgebirge: ♥MadEast für Mountainbike und Enduro, ♥Flossgrabenlauf für Skilangläufer oder den ♥Waldsportparklauf für Läufer.">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-        crossorigin="anonymous"></script>
-    <script src="./script/script.js"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/intro.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MadCross.de Waldsportparklauf Flossgrabenlauf C&auml;mmerswalde</title>
+  <meta name="description" content="Sport-Events f&uuml;r Jedermann im Osterzgebirge: ?MadEast f&uuml;r Mountainbike und Enduro, ?Flossgrabenlauf f&uuml;r Skilangl&auml;ufer oder den ?Waldsportparklauf f&uuml;r L&auml;ufer.">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+  <script src="./script/madmissionscript.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/madstyle.css">
+  <script>
+    document.addEventListener("touchstart", function () { }, true);
+  </script>
 </head>
 
 <body>
-    <div itemscope itemtype="http://schema.org/Event" class="w3-container">
-
-        <!-- MASTHEAD/NAVIGATION -->
-
-        <div class="w3-row">
-            <!--
-            <div class="w3-col s2 w3-center">
-                <img src="./images/madeast.jpg" class="logoLeft" alt="MadEast Logo1">
-            </div>
+  <div class="w3-top mytop">
+    <div class="w3-bar w3-wide w3-padding w3-card">
+      <a href="#home" class="w3-bar-item w3-button uppertxt">
+        <b>MADCross.de</b>
+      </a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#&Uuml;ber" class="w3-bar-item w3-button">&Uuml;ber</a>
+        <a href="#Veranstaltungen" class="w3-bar-item w3-button">Veranstaltungen</a>
+        <a href="#Abgehakt" class="w3-bar-item w3-button">Abgehakt</a>
+        <!--
+        <a href="#Partner" class="w3-bar-item w3-button">Partner</a>
         -->
-            <div class="w3-col s12 w3-center">
+        <a href="#Kontakt" class="w3-bar-item w3-button">Kontakt</a>
+      </div>
 
-                <div class="header w3-center w3-text-white">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()"
+        title="Toggle Navigation Menu">
+        <i class="fa fa-bars"> </i>
+      </a>
 
-                    <div class="nav navIntro" style="display:block">
-                        <div class="outerHeader">
-                            <div class="innerHeader">
-                                <div class="table">
-                                    <div class="leftcell">
-                                        Wähle Deine Saison!
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="nav navSpring">
-                        <div class="outerHeader">
-                            <div class="innerHeader">
-                                <div class="table">
-                                    <div class="leftcell">
-                                        <a href="./events/landkreislauf.html">
-                                            <div class="clickBtn leftcell">
-                                                Landkreis Lauf
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <!--
-                                    <div class="rightcell">
-                                        <a href="./events/fruehling2.html">
-                                            <button class="clickBtn w3-round-xxlarge">
-                                                <p class="clickTxt">Frühling 2</p>
-                                            </button>
-                                        </a>
-                                    </div>
-                                -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="nav navSommer">
-                        <div class="outerHeader">
-                            <div class="innerHeader">
-                                <div class="table">
-                                    <div class="leftcell">
-                                        <a href="./events/madeast.html">
-                                            <div class="clickBtn leftcell">
-                                                MadEast
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="rightcell">
-                                        <a href="./events/radtouristik.html">
-                                            <div class="clickBtn rightcell">
-                                                Radtouristik Tour
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="nav navAutumn">
-                        <div class="outerHeader">
-                            <div class="innerHeader">
-                                <div class="table">
-                                    <div class="leftcell">
-                                        <a href="./events/waldsportparklauf.html">
-                                            <div class="clickBtn leftcell">
-                                                Waldsportpark Lauf
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="rightcell">
-                                        <a href="./events/haseigel.html">
-                                            <div class="clickBtn leftcell">
-                                                Hase & Igel
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="nav navWinter">
-                        <div class="outerHeader">
-                            <div class="innerHeader">
-                                <div class="table">
-                                    <div class="leftcell">
-                                        <a href="./events/snowparkcontest.html">
-                                            <div class="clickBtn leftcell">
-                                                Snowpark Contest
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="rightcell">
-                                        <a href="./events/flossgrabenlauf.html">
-                                            <div class="clickBtn leftcell">
-                                                Flossgraben Lauf
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!--
-            <div class="w3-col s2 w3-center">
-                <img src="./images/logoright.jpg" class="logoRight" alt="MadEast Logo2">
-            </div>
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block myNavArea w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="#&Uuml;ber" class="w3-bar-item w3-button w3-padding-large">&Uuml;ber</a>
+        <a href="#Veranstaltungen" class="w3-bar-item w3-button w3-padding-large">Veranstaltungen</a>
+        <a href="#Abgehakt" class="w3-bar-item w3-button w3-padding-large">Abgehakt</a>
+        <!--
+        <a href="#Partner" class="w3-bar-item w3-button w3-padding-large">Partner</a>
         -->
-        </div>
+        <a href="#Kontakt" class="w3-bar-item w3-button w3-padding-large">Kontakt</a>
+      </div>
 
-        <!-- MAIN -->
+    </div>
+  </div>
 
+  <!-- Page content -->
+  <div class="w3-content w3-padding" style="max-width:1564px">
 
-        <!-- INTRO -->
-        <div class="intro">
-            <div class="w3-row">
-
-
-
-                <div class="w3-col s12 w3-center">
-                    <div class='menu_wrapper'>
-
-
-                        <!-- calendar area -->
-                        <!--
-                        <div class="calcontainer desktop-only">
-                            <div class="w3-row">
-                                <div class="w3-half">
-                                    <a class="block" href="./events/landkreislauf.html" target="_blank">
-                                        <p class="calendar event01">28
-                                            <em>April</em>
-                                        </p>
-                                    </a>
-                                </div>
-                                <br>
-                                <div class="w3-half">
-                                    <a class="block" href="./events/madeast.html" target="_blank">
-                                        <p class="calendar event02">23
-                                            <em>Juni</em>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="w3-row">
-                                <div class="w3-half">
-                                    <a class="block" href="./events/waldsportparklauf.html" target="_blank">
-                                        <p class="calendar event03">29
-                                            <em>September</em>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    -->
-
-
-                        <!-- End of calendar area  -->
-
-                        <div class='menu' id='Menu'>
-                            <div class='round'>
-                                <div class='Middle'>MadCross</div>
-                            </div>
-                            <div class='item item1'>
-                                <a class='Zn' href='#' data-color="#89c759" data-nav="navSpring">
-                                    <span itemprop="name">Frühling</span>
-                                </a>
-                            </div>
-                            <div class='item item2'>
-                                <a class='Sm' href='#' data-color="#f11308" data-nav="navSommer">Sommer</a>
-                            </div>
-                            <div class='item item3'>
-                                <a class='Ch' href='#' data-color="#aca8ad" data-nav="navAutumn">Herbst</a>
-                            </div>
-                            <div class='item item4'>
-                                <a class='Ot' href='#' data-color="#ffffff" data-nav="navWinter">Winter</a>
-                            </div>
-                        </div>
-
-                        <div class="desccontainer descevent01">
-                            <div class="w3-card w3-animate-right">
-                                <header class="w3-container descriptionHeader-spring">
-                                    Landkreislauf
-                                </header>
-
-                                <div class="w3-container descriptionTxt">
-                                    <p>26. Landkreislauf Mittelsachsen in Cämmerswalde</p>
-                                </div>
-                                </footer>
-                            </div>
-                        </div>
-
-                        <div class="desccontainer descevent02">
-                            <div class="w3-card w3-animate-right">
-                                <header class="w3-container descriptionHeader-summer">
-                                    MadEast
-                                </header>
-
-                                <div class="w3-container descriptionTxt">
-                                    <p>Mad East Challenge</p>
-                                </div>
-                                </footer>
-                            </div>
-                        </div>
-
-                        <div class="desccontainer descevent03">
-                            <div class="w3-card w3-animate-right">
-                                <header class="w3-container descriptionHeader-autumn">
-                                    Waldsportparklauf
-                                </header>
-
-                                <div class="w3-container descriptionTxt">
-                                    <p>48. Waldsportparklauf in Cämmerswalde</p>
-                                </div>
-                                </footer>
-                            </div>
-                        </div>
-
-                        <!--
-                        <div class="desccontainer1">
-                                <div class="w3-card w3-animate-right">
-                                    <header class="w3-container descriptionHeader">
-                                        Waldsportparklauf
-                                    </header>
-    
-                                    <div class="w3-container descriptionTxt">
-                                        <p>48. Waldsportparklauf in Cämmerswalde</p>
-                                    </div>
-                                    </footer>
-                                </div>
-                            </div>
-                        -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-row w3-text-white w3-center" style="height:150px">
-
-                <div id="evt1" class="w3-quarter" style="position: relative; height:150px">
-                    <a class="block" href="./events/landkreislauf.html" target="_blank">
-                        <div class="w3-bar">
-                            <div class="w3-bar-item">
-                                <p class="calendar">28
-                                    <em>April</em>
-                                </p>
-                            </div>
-                            <div class="w3-bar-item">
-                                <p style="padding-left:80px">Landkreislauf
-                                    <br>Cämmerswalde</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div id="evt2" class="w3-quarter" style="position: relative; height:150px">
-                        <a class="block" href="./events/madeast.html" target="_blank">
-                            <div class="w3-bar">
-                                <div class="w3-bar-item">
-                                    <p class="calendar">23
-                                        <em>Juni</em>
-                                    </p>
-                                </div>
-                                <div class="w3-bar-item">
-                                    <p style="padding-left:80px">MadEast
-                                        <br>Hermsdorf/Erz.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-         
-                <div id="evt2" class="w3-quarter" style="position: relative; height:150px">
-                    <a class="block" href="./events/radtouristik.html" target="_blank">
-                        <div class="w3-bar">
-                            <div class="w3-bar-item">
-                                <p class="calendar">23
-                                    <em>Juni</em>
-                                </p>
-                            </div>
-                            <div class="w3-bar-item">
-                                <p style="padding-left:80px">Radtouristik
-                                    <br>Satzung (Erzgb)</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-               
-
-                <div id="evt3" class="w3-quarter " style="position: relative; height:150px">
-                    <a class="block" href="./events/waldsportparklauf.html" target="_blank">
-                        <div class="w3-bar">
-                            <div class="w3-bar-item">
-                                <p class="calendar">29
-                                    <em>September</em>
-                                </p>
-                            </div>
-                            <div class="w3-bar-item">
-                                <p style="padding-left:80px">Waldsportpark
-                                    <br>Lauf
-                                    <br>Cämmerswalde</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- End of INTRO -->
-
-        <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-            <meta itemprop="name" content="Cämmerswalde">
-            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <meta itemprop="streetAddress" content="Sportplatz und das Haus des Gastes in der Ortsmitte von Cämmerswalde">
-            </span>
-        </span>
-        <meta itemprop="startDate" content="2018-04-28">
-        <meta itemprop="url" content="https://www.madcross.de/events/landkreislauf.html">
+    <!-- &Uuml;ber Section -->
+    <div class="w3-container w3-padding-32" id="&Uuml;ber">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">&Uuml;ber</h3>
+      <p>READY, STEADY, GO! ... nach 13 Jahren der Mountainbikegro&szlig;veranstaltung hei&szlig;t es f&uuml;r uns auf zu neuen
+        Herausforderungen: die Mad East Challenge wird zum Ganzjahresprojekt! Mehrere kleine Veranstaltungen in verschiedenen
+        Sportarten an verschiedenen Orten sollen das Angebot erweitern, die pers&ouml;nlichen Vorlieben der Mad-East-Macher
+        widerspiegeln und vor allem den famili&auml;ren Charakter der Unternehmungen wieder verst&auml;rkt in den Mittelpunkt
+        r&uuml;cken. Freut euch auf die verschiedenen Events!
+        <p>
     </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="w3-container">
-            <div class="w3-panel w3-text-white w3-center w3-padding-large">
-                MadCross.de
-            </div>
+    <!-- Project Section -->
+    <div class="w3-container w3-padding-32 btn-0" id="Veranstaltungen">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 ">Veranstaltungen</h3>
+    </div>
+
+    <div class="w3-row-padding">
+
+      <!--
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <figure class="snip0016">
+            <img src="https://lh3.googleusercontent.com/1g8UzyV8jXpml_kdMKBkT3xmtNn55XOjkModjsM2i4hTbVXVq2Py24sF4EL3uUhrEVQWACzby5cV4EDVM_UPxfVpghEUdvNO98hLWBRChyxvzS4WWG9AhwMZqMrrAgQVj2H_k91BP6fT4zhZ8XtbyjypRYiQqjzzO3Q7ai9NEjafRJvwpSedsLXWPcZFPrNPmh8EFo2cgF6a77MebnkZu337Je4ciRIq21Luy3eqCZTWRrILYYq64owjVwIFNF7nZULanY8jxzxEAsAsB3D6bTDi3DOmX3wgLvVA2Gn2rz8ZNC9W9Js5Pvt2UhRrcbtNpRCxJIsK37ZbWFwoVr1SlMrKhTcLtkFT62W0iCwQbKpbXQAUrst0h3MJryOWqEzkwxGK3cnX3zHfiTPra7I9xxa-rNoMCtn6n5LKn0MC_lslfRbiedpi67N7oxBXKh53nDhDxAjWzxaGqOSCv4KWZb2gkOx_7vflqDIFozb0vIPy0NESWzk0HemZdAA1yyW-3wEAIDJOhdGSwAkwYf_SmFCjmZJbRc4d09bD8PVN_4cRWrlRy5oWtwZ1SeE1XPES-iNERduB-dg8Ar1oknhqNfgV1goMJyhIHlwUbl9Z=w1448-h966-no"
+              alt="House" style="width:100%">
+            <figcaption>
+              <span id="figcap1">
+                <div class="figHeader">Mad Landkreislauf</div>
+              </span>
+            </figcaption>
+            <figcaption>
+              <span id="figcap3">
+                <div class="calMonth">April</div>
+                <div class="calDay">28</div>
+              </span>
+            </figcaption>
+            <figcaption id="figcap2">
+              <h2>MAD
+                <br>
+                <span>Landkreislauf</span>
+              </h2>
+              <p>Laufen! Mach mit!</p>
+              <p>28.04.2018</p>
+              <a href="#"></a>
+            </figcaption>
+          </figure>
         </div>
-    </footer>
+      </div>
+-->
+      <div class="w3-col l4 m6 w3-margin-bottom navtarget" data-target="_self" data-nav="./events/madeast.html">
+        <div class="w3-display-container">
+          <figure class="snip0016">
+            <img src="https://lh3.googleusercontent.com/CxEwpsxlXJfJNHCntgzNNTsAU1Z3vsYxS3F6uW9hGf_lsEAaecfVju8XWxivKquLYxzDKVOAVosHus-dcO7hix6-ONQYBc9e8UdPeViXR1hQE08VDYUP0P_PT_3k_Jn1Ksg_q5CwPZsIBVmYISd1ddIClqfDPiz0BDB8C910SsxSyT0-vQSrnrOJVAHMGst9p1ZWEjLnvgTMpzDdN_toawbqvNZm6KdRRZiTtawaZz28RiAMHkMLV4Uez_vtJCtLfgOaUU1sRsRB1cSpNak3QeEAVYQeA97AIRj1hGUpCs9_81hub9oJ8DF6IDenJXrmiJACWBUVA_Tmv1UrP6niZDM_oJtyB9hcihWl5yGu9765jZnmi-TqQpZjvwaapcMZL9o4daGNLD55FieyulIQI6u9lsV3cm3ZaMlngpeBdJ3_OnUOgFbm6qL2PjBYShb5-E6z3RD95GH_htNjQ6t_TAgFanllbzgqVSyWjVmcQNmjljqvOcZk0lGtZz_uYnN7O2ihrmv0gc5uZQMKiHXGmEgWj9okHaQqogjL-SYyAx0CkLoRO1Ty9ByfzGjdpFSZMO4kvjLKKaRNXKNf9nXXDmq3_UDj7bPyGYGwNXJ0AAUmrolM1eidzEjnYpEMcyquPsMbg28cXjSYpOfTVhLyKQaWdsl8RLMvEQ=w477-h318-no"
+              alt="House" style="width:100%">
+            <figcaption>
+              <span id="figcap1">
+                <div class="figHeader">Mad East Enduro</div>
+              </span>
+            </figcaption>
+            <figcaption>
+              <span id="figcap3">
+                <div class="calMonth">Juni</div>
+                <div class="calDay">23</div>
+              </span>
+            </figcaption>
+            <figcaption id="figcap2">
+              <h2>MAD EAST
+                <span>
+                  <br>Enduro</span>
+              </h2>
+              <p>Verr&uuml;ckt genug?</p>
+              <p>23.06.2018</p>
+              <a href="#"></a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="w3-col l4 m6 w3-margin-bottom navtarget" data-target="_self" data-nav="./events/radtouristik.html"">
+        <div class="w3-display-container">
+          <figure class="snip0016">
+            <img src="https://lh3.googleusercontent.com/6-5asWDfie8SJputteS1d684fihJXGSpTYfQdgE6V6mpd9kZw66lfQd302NqfcbXwyfZEuU0860xyuQMfFxRm-rZ6WGwj7XxEOMPMO5NGPPHxsC8TJR70EbFa03BlX4DAUCYjrXGOfq5QU6ufbiGiTcrE-KvpwBlC_QnjPr6DIF0mJm_U8Nxh-CAewM7Eqz65yTguCIM07xKlpunGInMO3QtTxezLrM3RbzgQBS6xIwIobhvVTv_1pZORdKFv58NG5nyscjZAov1syxfThMN-Xorb0scs2yye_TVxkVqYLUuTRmwEQK9hJ1Bq-Tomui9cSuUaDBnpH8qVrFFmbeCHlvXSfVEs5-dLksG94selxIt5h-WDbRhio7xaAGJgJnEYV_O952CNRYJ12XIVwv8ROcvdK09pO2n5FQbTVblxzLNIETKvQ7VnhdqFE4CHS6CdEL4r_-KaM7Vw2ekA3gnXKPp5FLFDdLM48jjIAPt8lpZ1CYJfUepyg4E0Tg7L66qUXvUHSMm31zNzYV-3BYnslLvMamaUCBBbd-iI3AWVRwzHlXyRwk7CbvOufuv__rdWtsWiDFrNS8KwAG1eaRlL1wahjF89l3RLVgiynRd=w478-h318-no"
+              alt="House" style="width:100%">
+            <figcaption>
+              <span id="figcap1">
+                <div class="figHeader">Mad Radtouristik</div>
+              </span>
+            </figcaption>
+            <figcaption>
+              <span id="figcap3">
+                <div class="calMonth">Juni</div>
+                <div class="calDay">22</div>
+              </span>
+            </figcaption>
+            <figcaption id="figcap2">
+              <h2>MAD
+                <br>
+                <span>Radtouristik</span>
+              </h2>
+              <p>Landschafts-und Kulturgenuss im Erzgebirge</p>
+              <p>22.06. - 24.06.2018</p>
+              <a href="#"></a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="w3-col l4 m6 w3-margin-bottom navtarget" data-target="_self" data-nav="./events/waldsportparklauf.html"">
+          <div class="w3-display-container">
+            <figure class="snip0016">
+              <img src="https://lh3.googleusercontent.com/4qyfQntjbkq8GvmK-Cg04RPsUto5A1CaG31dWwp3CE-bkIxu-gdUEfT5XOvthIAE0T4xkVTGtasEX0dZAxAugAMeK7nzqfdcNGVrvLgxGefokkLupX99kwa6YPrxMMWGmD6FDWjb9gjD8pLgERHSnobX8SfZf8fMu_aQrT-BpGU_uezbxwuZ_t3tt_a8_Vvt61HOC-vo23IM90JiQmTqo8HyIy5nYtiX0C5MhYebj8LnBO1_rWD1j8lYITcqBuI38Nm0CNsJmbiB1mbbi23U-ROq5T6pdJIECLac0F1HA2f_Qxru-D62fOhk8iZDH5Bdp71J7kEetkasbWORBf9boVqMQGcE48WMVepQYFVfwPRJXG4KI4mmZhY2ZRfJv5A-Hitzop2ZCKPbFosoO9BxnPFxCHLmC0d-4Nk536dXWPYOzmsX4wnqQ5UJQDkyfV7HaOfMhGrWKTuannSRHrPsARtN95Vovbm923dc2Wt0ziXOTV0aNHHcJtfhc-fuG8H9HGHhIIbREiXklGdZFw9H06JyqGkpaLB_DegbEl53zxJzbXhkc2w-iOKh3Khp-GqD5X5DjuzM_yLv8SCeZw-0Yh8ShBIDubnmK0Kn4o4N=w477-h318-no"
+                alt="House" style="width:100%">
+  
+              <figcaption>
+                <span id="figcap1">
+                  <div class="figHeader">Mad Waldsportparklauf</div>
+                </span>
+              </figcaption>
+              <figcaption>
+                <span id="figcap3">
+                  <div class="calMonth">September</div>
+                  <div class="calDay">29</div>
+                </span>
+              </figcaption>
+              <figcaption id="figcap2">
+                <h2>MAD
+                  <br>
+                  <span>Waldsport
+                    <br>parklauf</span>
+                </h2>
+                <p>Fun Fun Fun</p>
+                <p>29.09.2018</p>
+                <a href="#"></a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+    </div>
+
+    
+
+    <div class="w3-row-padding">
+
+     
+
+
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <figure class="snip0016">
+            <img src="https://lh3.googleusercontent.com/MIyjirT_DuX62uFmeEdDyL27rPSAkuj4qQUCwuPLQcc1r6xHZUl02q4ChiU2oD37uoXOnAfaH1oWUpm-i_JhQ8ntUqWbKATu-pf3ya2vnnp1Q0X1SIyi3L33bofAFGbogZWDlGZM2neA5TAB0f0LcYYrv-vxsGxGbd1n92Gz8qbjoz29xX5NWe-3aBfi44v-UXe3qDrbHaajK79iwbIQ0gS9vsMSfNwO2GMLjPUvOHqgtstq4wUgKGb_a4SARRfAHNXlwJkjJtIZebQ-_BEtB43-61Rc9qgdnbcguZKuqySu1__n1Jjl6UtN8RbkTm7NjgiH4iNMZiqalxxmnzYIBY7eKXo_zM_OP96mOw5T0pi40z-QrRtwNyYugeTYzuipXEVF4kQQheDi2R2k-2xuhv-y9P3iMr88mAJc_X-L_f_WJblyuuOfWShjOeYCwZIZjtz6T5cmkamUOEnIjEyZltSDdgLeB2GxmS-l875KIQ09akmEfgkwQElz-eUoUj2Eya-hEmAjeCUo73JwXTA_dMgV1eNdgN5uNdA-i9GbabB3npjKKxtnoNIhdqpbNHHCV880dQBeSYsIJMkEPE2lyN1L_12RDoJJu3Kkm2Q=w477-h319-no"
+              alt="House" style="width:100%">
+            <figcaption>
+              <span id="figcap1">
+                <div class="figHeader">Mad Hase & Igel</div>
+              </span>
+            </figcaption>
+            <figcaption>
+              <span id="figcap3">
+                <div class="calMonth">November</div>
+                <div class="calDay">21</div>
+              </span>
+            </figcaption>
+            <figcaption id="figcap2">
+              <h2>MAD
+                <br>
+                <span>Hase & Igel</span>
+              </h2>
+              <p>Wilde Hatz!</p>
+              <p>21.11.2018</p>
+              <a href="#"></a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <figure class="snip0016">
+            <img src="./images/winter.jpg" alt="House" style="width:100%">
+            <figcaption>
+              <span id="figcap1">
+                <div class="figHeader">Mad Flossgrabenlauf</div>
+              </span>
+            </figcaption>
+            <figcaption>
+              <span id="figcap3">
+                <div class="calMonth">Januar</div>
+                <div class="calDay">2019</div>
+              </span>
+            </figcaption>
+            <figcaption id="figcap2">
+              <h2>MAD
+                <br>
+                <span>Flossgraben
+                  <br>Lauf</span>
+              </h2>
+              <p>Ab auf die Ski</p>
+              <p> Januar 2019</p>
+              <a href="#"></a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Project Section -->
+    <div class="w3-container w3-padding-32 btn-0" id="Abgehakt">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 ">Abgehakt</h3>
+    </div>
+
+    <div class="w3-row-padding">
+
+      <div class="w3-col l4 m6 w3-margin-bottom navtarget" data-target="_blank" data-nav="http://www.ksb-mittelsachsen.de/startseite/veranstaltungen/alle-ergebnisse-mit-archiv/#erg_land">
+        <div class="w3-display-container">
+          <figure class="snip0016">
+            <img src="./images/lks2018.jpg"
+              alt="House" style="width:100%">
+            <figcaption>
+              <span id="figcap1">
+                <div class="figHeader">Mad Landkreislauf</div>
+              </span>
+            </figcaption>
+            <figcaption>
+              <span id="figcap3">
+                <div class="calMonth">April</div>
+                <div class="calDay">28</div>
+              </span>
+            </figcaption>
+            <figcaption id="figcap2">
+              <h2>MAD
+                <br>
+                <span>Landkreislauf</span>
+              </h2>
+              <p>Ergebnisse unter http://www.ksb-mittelsachsen.de</p>
+              <p>28.04.2018</p>
+              <a href="#"></a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+
+      <!-- Partner Section 
+      <div class="w3-container w3-padding-32" id="Partner">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Partner</h3>
+      </div>
+      <div class="w3-row-padding w3-grayscale">
+        <div class="w3-col l3 m3 s3 w3-margin-bottom">
+          <img src="https://lh3.googleusercontent.com/P6Fu5VQpMSeHBE-53dPuQv3dQENjyK2mmOVqTFsjWDKTU_kGbRqsO1jv15cWvT2m0EEwTUTjnk8fdzqLqpFEOIQDnrlnYymsZv7jUsuDla6uoyL0TPpw2kM-LzsEyhdkEh_BJmd_z59UEOn-_ZipAtABuT1zODxBBuhV4ZPBj4uMZDGYecUtFPr7o9tJ5BPpKGwa0Mn8-avCEWJEtCXV4T-OuHPu_C4QNLz3WeHnXrbYN1Y-yRBNzuquDUt903ptVxpuznqCnh5CFtIPcrydlk1wqck-LzJGdVaxqTCil7O6ORSi79yTt-X7UfY6UNqsN6Q877HCq7Mgzzw5glCLTihVf2cgwbuAFLFoesl2EStQ_PBI2UF6GnQR_IqYMIzbwZW5z9w321Y2v-WMEFB8k2oykMrKjQvUzaM2FAnqrufflu9boIZYknoZ1SfklRxKpp1OSnbfhqA6tniZsYw6Fh4AJz03UJLrhC9WtuwacWVpY4jU9yNAGHxynBe8MwSD3aWQF0o9GH0BpZJCWODH6HbW2QrK4JoLa2IAqZK_Yf7v6pi1QeL_4b93KdtyIRG0n-n5xPuE0E1hH30Rab5lmO8rje7pXwM_hSa4sss8=w219-h150-no"
+            alt="John" style="width:100%">
+        </div>
+        <div class="w3-col l3 m3 s3 w3-margin-bottom">
+          <img src="https://lh3.googleusercontent.com/96VeHUAoZ8143ZeXaXFJyCxrbv213DaukJyxXnmdvoHC29RBn9bkFNahHMmt3fgZggEbzr53B3kbEQplsVLQpFWB_sJ5apSeR3uzEc3-u8EvJmWBcZqOxJyIJor4YnPa8KmhO3D55JfLqoKCzfnoKmZUuBQye80Ts5OX2pHQvXvtMCcGPHHXlYb4Mu57EurvV0hJOsqig2GSVvuP-JNXF-Hxad2HUJ2FDb0u5s_Z_vl4wZOwgOyZSc167qdTrY7F1jtC-9NMSQ-OUaWDdunOgXpGqSk2zqAzIyNA8XJuw6DJaDdWIMdnhqeu4rgJwoFaCbECHt66NB3zLHoJgEx6-V8RxWbZcWjVTlsALVHykUyG8rJrRAaxobNN82e18PlFuHcuP5SnOp9clcuSy96_e9brO7JPriI6iJ0Gm4uk3xTd0c66uwC6NBrfTWZgy7HdkHXLAmuRRAuYhf03RDnvJ77g415p3vFEdKHkwGd3ikjhvLsLzXXaFeYTpGHgqm4sT_zeqrMccPd7ctXfYPLnDbaz33Bl4Ox9ZZZoLwOECqtP10z02CZ0QKMHMZHrGcNJ3ztMIxAYNe52Vvt_SAaIhLIZYa1WbP4Bk2fVbPhJ=w219-h150-no"
+            alt="Jane" style="width:100%">
+        </div>
+        <div class="w3-col l3 m3 s3 w3-margin-bottom">
+          <img src="https://lh3.googleusercontent.com/CGKaYENx-Bapx9Pm_ZlEYq2pKpYe9T4GNoKtSkx2M1T9pc7Ms6DfvQWZSbixOJNek7ETAccWbCqLTr-wHz39mP6Tj95GKUOb0gyboX6AfHqkfepuYdv1gU2LXKT1z8qNnhh-Nv_OppyO87VO3EdG4dkU_Nk335AUmTCjQ_eEGPL9Ay8uv9ifIEMiUyCp5zbYj2jeR2Y2L2YEPeSqUZf69YYPXzqcLIRa5Tu7I5JH60BZRQsswzTWp4_We7DLpvOi9jhzGONcTm39HaFAPUs770QB1LlsJxUoO0F1M_xL91iFrkjRmvXs2323x8-d9cPkbxxvKjTJMmi5P5hbOkgzXoErpxzkd45TNty9b-xA9XEs87h7or1My0GV8OcNC2U58As3HzP9txP8EHt3j4xeplyMTUeGqq7NIKGC_DafEdiGXQfX0XbswX4PLF3X9dRGlahzTiBQPbJuCjepwiMiBYQAYVq8EiBLhaDNrBzIKgd77QE8Y0LyjYL6a_eR10p-p938bF9VFiz1K1KF2OVklDolpZjxolYW0IUDhospgb21-xyqYsS8cmD9On4ibo6r3D0JdB31s8QOwrBEptNiuQp4c_ycxO8tihGS47gB=w219-h150-no"
+            alt="Mike" style="width:100%">
+        </div>
+        <div class="w3-col l3 m3 s3 w3-margin-bottom">
+          <img src="https://lh3.googleusercontent.com/Ntw2XKicqy312_bdYP_hmufEeU60WySZSVZ8NRcsJ07lzzkT6O6QgCgBJZP3v_b2Ej6an3-XEqPLF70saYmaIRVfynU9TxrZci5Y2PjGybTV8L0_YCrs3MU6MnMGPcjEblIGKLb0zeUJX8GMI4UyvAZT6akszkbqjWNnauOuQ-MTKd3x-loSnKYCaagO0AaHQ4Td-KDFiGUDebMpSi2hQYILinuXXk7GBYcUntxtnrSKpnCF3VhSu_9ch29_B609tdEsEgLtBdsL0ngU9LLijAyvPUknAr6EXocYpothvMuN6Xc5PLDCJskl47esmrpanTLeyNT08r9QTP-aV_-zMdZmaOmZarALfueGYE_-nfMk3vDBgWp5X37pxdD_X6K2ompzuZGYXwhQjfqUjsdLphWmlzPDZnSUmtYsGPZ8_OxwDyzkOTOophjm40TZ-JkoviWcZO4VI6Q8RxP1sAgBBTm4itVek4EMDzZ4ZjhvuxEAekFRMZ8GNxf6U0U28YP9UnUtL6tOo6EV_ZjD6QJAp3jlj1lpF9WQJpVekKgmQkzDfK6NH0Wn5qIXWIiNYql4o2_Gi6W7Os57QR_HSvmLeXd8LvyuFg98BMVmfRt7=w219-h150-no"
+            alt="Dan" style="width:100%">
+        </div>
+      </div>
+
+      -->
+
+      <!-- Contact Section -->
+      <div class="w3-container w3-padding-32" id="Kontakt">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Kontakt</h3>
+        <p>Mad East Challenge e.V.
+          <br>Organisationsb&uuml;ro
+          <br>c/o D. Beyer
+          <br>Hauptstra&szlig;e 56
+          <br>09544 Neuhausen/OT C&auml;mmerswalde
+          <br>Fon: +49 (0) 173 994 54 68
+          <br>Fax: +49 (0) 37327 83 98 20
+          <br>info@madmission.de</p>
+      </div>
+
+      <!-- End page content -->
+    </div>
+  </div>
+
+  <div class="w3-bar w3-wide w3-padding w3-card">
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-tiny">
+      <a href="./impressum.html" class="w3-bar-item w3-button">Impressum</a>
+      <a href="./datenschutz.html" class="w3-bar-item w3-button">Datenschutzerklärung</a>
+    </div>
+  </div>
+
 </body>
 
 </html>
