@@ -147,3 +147,103 @@ body {
 	-webkit-animation-delay: 10s;
 	animation-delay: 10s;
 }
+
+/* team route */
+#myfigure,
+#myfigcaption {
+	margin: 0;
+	padding: 0;
+}
+
+#myfigure.einzel {
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+}
+
+#myfigure img {
+	width: 100%;
+	display: block;
+}
+
+#myfigcaption {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	line-height: 3em;
+	color: white;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+#myfigcaption {
+	position: absolute;
+	bottom: -3em;
+	/* gilt für das erste (linke) Beispiel */
+	
+	text-align: center;
+	line-height: 3em;
+	white-space: nowrap;
+	color: white;
+	background: rgba(0, 0, 0, 0);
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+#myfigure.rechts #myfigcaption {
+	width: 0;
+	bottom: 50%;
+	left: 50%;
+	overflow: hidden;
+}
+
+#myfigure:focus #myfigcaption,
+#myfigure:hover #myfigcaption {
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+}
+/* das Fragezeichen als Pseudo-Element */
+
+#myfigure:before {
+	/* content: "?"; */
+	position: absolute;
+	bottom: 1em;
+	left: 1em;
+	background: rgba(255, 255, 255, 0.5);
+	color: black;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 1em;
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+#myfigure:focus:before,
+#myfigure:hover:before {
+	background: rgba(255, 255, 255, 0);
+	color: rgba(0, 0, 0, 0);
+}
+
+@media only screen and (max-width: 800px) {
+	body {
+		width: 100%;
+		margin: 2% 0;
+		padding: 1%;
+	}
+	/*
+	#myfigure.einzel {
+		width: 48%;
+	}
+	*/
+}
+
+@media only screen and (max-width: 600px) {
+	#myfigure.einzel {
+		width: 100%;
+	}
+}
